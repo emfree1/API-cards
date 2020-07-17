@@ -1,5 +1,5 @@
 const StarWars = axios.create({
-    baseURL: 'https://swapi.co/api/',
+    baseURL: 'https://swapi.dev/api/',
     headers: {
         'Content-Type': 'application/json'
     }
