@@ -1,5 +1,5 @@
 const StarWars = axios.create({
-    baseURL: 'https://swapi.dev/api/',
+    baseURL: 'http://swapi.dev/api/',
     headers: {
         'Content-Type': 'application/json'
     }
@@ -28,8 +28,6 @@ const renderUsers = (usersAll) => {
         removeBtn.textContent = 'X';
         removeBtn.addEventListener('click', () => {
             userElement.remove();
-            deleteUser(element.id)
-            console.log(removeBtn)
         })
 
         userElement.append(removeBtn)
