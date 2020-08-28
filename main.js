@@ -1,5 +1,5 @@
 const StarWars = axios.create({
-    baseURL: 'http://swapi.dev/api/',
+    baseURL: 'https://swapi.dev/api/',
     headers: {
         'Content-Type': 'application/json'
     }
@@ -7,7 +7,7 @@ const StarWars = axios.create({
 
 const deleteUser = async (userId) => {
     try {
-        const deletePeople = await StarWars + 'people/' + userId;
+        const deletePeople = await StarWars + '/people/' + userId;
         console.log('deletePeople: ', deletePeople);
     } catch (err) {
         console.log('error in deleteUser: ', err);
